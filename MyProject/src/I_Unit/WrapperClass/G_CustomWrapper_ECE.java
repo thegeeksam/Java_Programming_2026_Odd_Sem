@@ -19,7 +19,7 @@
  * * The custom wrapper class can be used
  * * in scenarios where you want to add behavior or properties to a primitive type,
  * *
- * @package I_Unit
+ * * @package i_unit.wrapperclass
  * @author Dr. S. Sampath Kumar
  * @since 22-06-2026
  * @version 1.0
