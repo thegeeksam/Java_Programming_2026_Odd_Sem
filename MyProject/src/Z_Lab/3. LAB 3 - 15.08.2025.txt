@@ -1,0 +1,27 @@
+---->  Bank Account System Using Encapsulation & Abstraction <-----
+>>>>>Problem Statement<<<
+You are tasked with designing a simple Bank Account Management System.
+The system should allow users to:
+- Create a bank account with a name and account number.
+- Deposit and withdraw money.
+- View account balance.
+
+To ensure security and modularity:
+- Use encapsulation to protect sensitive data like balance.
+- Use abstraction to define operations via an abstract class or interface
+
+"Sample Input"
+Enter account holder name: Hariharan
+Enter account number: 123456
+Enter deposit amount: 10000
+Enter withdrawal amount: 2500
+
+"Expected Output"
+Account created for Hariharan (Account No: 123456)
+Deposited: Rs.10000.0
+Withdrawn: Rs.2500.0
+Current Balance: Rs.7500.0
+
+
+
+

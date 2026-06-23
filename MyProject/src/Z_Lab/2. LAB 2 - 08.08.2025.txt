@@ -1,0 +1,30 @@
+----> Employee Hierarchy with Inheritance & Polymorphism <-----
+>>>>>Problem Statement<<<
+Design a class hierarchy in Java to represent different types of employees in a company. 
+All employees share common attributes and behaviors, but specific roles like Manager and Developer have specialized methods.
+Your task is to:
+- Create a base class Employee with common fields like name, id, and a method 'calculateSalary()'
+- Create subclasses Manager and Developer that inherit from Employee.
+- Override the 'calculateSalary()' method in each subclass to reflect role-specific logic.
+- Add specialized methods:
+	- Manager: conductMeeting()
+	- Developer: writeCode()
+- Use polymorphism to call 'calculateSalary()' on different employee types.
+
+"Sample Input"
+Enter employee type (Manager/Developer): Developer
+Enter name: Arjun
+Enter ID: 102
+Enter base salary: 50000
+
+
+"Expected Output"
+Employee Type: Developer
+Name: Arjun
+ID: 102
+Calculated Salary: 55000.0
+Developer is writing code...
+
+
+
+

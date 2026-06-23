@@ -1,0 +1,16 @@
+>>>Designing a Personalized Art Certificate System:<<<
+Riya, a freelance graphic designer, tracks her client 
+projects using a simple system. Each project has a 
+title, client name, number of design revisions, and a 
+fixed base fee. If the number of revisions exceeds 3, 
+she charges ₹500 per extra revision.
+
+Design a class ProjectInvoice with the following:
+- Instance variables: title, clientName, numRevisions, baseFee
+- Constructor to initialize all fields
+- Method calculateTotalFee() that returns the total fee based on the revision logic
+- Method getProjectSummary() that returns a formatted String like:
+   "Client: ABC Corp | Project: Logo Design | Total Fee: ₹7500"
+Write a test class ProjectInvoiceTest to create two project objects and display their summaries.
+
+

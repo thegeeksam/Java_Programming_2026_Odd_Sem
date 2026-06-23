@@ -1,0 +1,27 @@
+Write a Java program that prompts the user to enter their name, age, and city. The program should use a class called "UserProfile" that demonstrates:
+- A default constructor that initializes the user details with default values.
+- An overloaded constructor that accepts user input and sets the values accordingly.
+- A method displayDetails() that prints the user information in a formatted way.
+- Validate that age is a positive integer.
+
+Sample Input
+Enter your name: Hariharan
+Enter your age: 15
+Enter your city: Pollachi
+
+Enter your name: Hariharan
+Enter your age: -5
+Invalid age. Please enter a positive number.
+Enter your age: 15
+Enter your city: Pollachi
+
+Sample Output
+User Details:
+Name: Hariharan
+Age: 15
+City: Pollachi
+
+
+
+
+
