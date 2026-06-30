@@ -17,18 +17,20 @@
  * @version 1.0
  */
 package II_Unit.Static_Keyword;
+
 class Counter {
-    static int count = 0; // static variable shared by all Counter objects
-    int iJoshua = 0; // non-static variable, unique to each instance
+    static int iStaticVar = 0; // static variable shared by all Counter objects
+    int iAkshay = 0; // non-static variable, unique to each instance
 
     Counter() {
-        count++;
-        iJoshua++;
-        System.out.println("Object created. Count: " + count + ", iJoshua: " + iJoshua);
+        iStaticVar++;
+        iAkshay++;
+        System.out.println("Object created. Count (Static Variable): "
+                + iStaticVar + ", Instance Variable: " + iAkshay);
     }
 }
 
-public class StaticVariable {
+public class A_StaticVariable {
     public static void main(String[] args) {
         // Creates 4 instances of Counter
         new Counter();

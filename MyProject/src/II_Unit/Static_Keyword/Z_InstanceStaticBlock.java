@@ -12,7 +12,7 @@
  */
 package II_Unit.Static_Keyword;
 
-public class InstanceStaticBlock {
+public class Z_InstanceStaticBlock {
     // static variable declaration
     static int area;
     static int radius;
@@ -23,13 +23,13 @@ public class InstanceStaticBlock {
         System.out.println("Instance initializer block executed.\nRegion set to: " + region);
     }
 
-    public InstanceStaticBlock() {
+    public Z_InstanceStaticBlock() {
         System.out.println("Constructor executed. Region is: " + region);
     }
-    
+
     // run before main()
-    // will run only once. 
-    // class‑level initialization 
+    // will run only once.
+    // class‑level initialization
     static {// static block declaration
         System.out.println("Invoked java static block!");
         // initializing radius and area static variable
@@ -42,8 +42,8 @@ public class InstanceStaticBlock {
         // System.out.println(++radius);
         System.out.println("main() function Invoked!!");
         System.out.println("Area of square with radius " + radius + " is: " + area);
-        InstanceStaticBlock obj = new InstanceStaticBlock();
-        InstanceStaticBlock obj1 = new InstanceStaticBlock();
-        InstanceStaticBlock obj2 = new InstanceStaticBlock();
+        Z_InstanceStaticBlock obj = new Z_InstanceStaticBlock();
+        // InstanceStaticBlock obj1 = new InstanceStaticBlock();
+        // InstanceStaticBlock obj2 = new InstanceStaticBlock();
     }
 }

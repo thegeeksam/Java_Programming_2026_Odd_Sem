@@ -22,13 +22,13 @@
  */
 package II_Unit.Static_Keyword;
 
-public class StaticBlock {
+public class B_StaticBlock {
     // static variable declaration
     static int area;
     static int radius;
     // run before main()
-    // will run only once. 
-    // class‑level initialization 
+    // will run only once.
+    // class‑level initialization
     static {// static block declaration
         System.out.println("Invoked java static block!");
         // initializing radius and area static variable
@@ -39,7 +39,7 @@ public class StaticBlock {
     public static void main(String[] args) {
         // System.out.println(radius);
         // System.out.println(++radius);
-        System.out.println("In the main() function");
+        System.out.println("main() function invok");
         System.out.println("Area of square with radius " + radius + ": " + area);
     }
 }

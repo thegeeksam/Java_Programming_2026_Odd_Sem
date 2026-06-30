@@ -1,3 +1,16 @@
+/**
+ * * This file is part of the Java Programming Lecture project.
+ * *
+ * * This Java snippet illustrates:
+ * * - Declares a final class and attempts to inherit it, 
+ * *   which will result in a compilation error.
+ * *
+ * @package II_Unit.Final_Keyword
+ * @author Dr. S. Sampath Kumar
+ * @since 30-06-2026
+ * @version 1.1
+ */
+
 package II_Unit.Final_Keyword;
 
 // Final Class
@@ -15,7 +28,7 @@ class Y extends X { // Error
     }
 }
 
-public class FinalClass {
+public class D_FinalClass {
     public static void main(String[] args) {
         X varX = new X();
         varX.displayX(); // Call the display method to use the variable
