@@ -19,31 +19,39 @@
 package II_Unit.Inheritance;
 
 class ClassA {
-    ClassA(){
+    ClassA() {
         System.out.println("Constructor of ClassA");
     }
-    public void displayA(){
+
+    public void displayA() {
         System.out.println("disp() method of ClassA");
     }
 }
+
 class ClassB extends ClassA {
-    ClassB(){
+    ClassB() {
+        super();
         System.out.println("Constructor of ClassB");
     }
-    public void displayB(){
+
+    public void displayB() {
         System.out.println("disp() method of ClassB");
     }
 }
-class ClassC extends ClassB{
-    ClassC(){
+
+class ClassC extends ClassB {
+    ClassC() {
+        super();
         System.out.println("Constructor of ClassC");
     }
-    public void displayC(){
+
+    public void displayC() {
         System.out.println("disp() method of ClassC");
     }
 }
-public class B_MultiLevel{
-    public static void main(String args[]){
+
+public class B_MultiLevel {
+    public static void main(String args[]) {
         // Creating an object of ClassC
         ClassC c = new ClassC();
         c.displayA();
@@ -51,3 +59,11 @@ public class B_MultiLevel{
         c.displayC();
     }
 }
+
+/*
+ * 
+ * Object Creation - Creates memory - Heap Allocation
+ * 
+ * Constructor Execution - Initializes memory -Object Initialization
+ * 
+ */

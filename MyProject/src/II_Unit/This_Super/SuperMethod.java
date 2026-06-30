@@ -21,7 +21,7 @@ package II_Unit.This_Super;
 class Parent2 {
     // declaring display method parent class
     void display() {
-        System.out.println("Hi I am parent method.");
+        System.out.println("Hi, I am parent method.");
     }
 }
 
@@ -29,7 +29,7 @@ class Parent2 {
 class Child2 extends Parent2 {
     // declaring display method in Child class
     void display() {
-        System.out.println("Hi I am child method.");
+        System.out.println("Hi, I am child method.");
     }
 
     void print() {

@@ -17,14 +17,20 @@ package II_Unit.This_Super;
 class Illustration4 {
     int value = 5;
 
-    // print method
+    // No new object is created.
+    // It simply passes the reference of the existing object.
     void print(Illustration4 ob) {
+        // ob.value += 10;
         System.out.println("ob.value = " + ob.value);
     }
 
     void invoke() {
         // print method is invoked by passing 'this' as an argument
+        // this passes the reference of the current object to the print() method.
         print(this);
+        // this refers to the current object of Illustration4 class
+        // object is not passed here, object reference is passed
+
     }
 }
 

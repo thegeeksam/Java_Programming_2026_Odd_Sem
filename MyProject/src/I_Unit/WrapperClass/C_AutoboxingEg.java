@@ -13,7 +13,7 @@
  * @version 1.0
  */
 
-package WrapperClass;
+package I_Unit.WrapperClass;
 //Autoboxing example of int to Integer and char to Char
 
 public class C_AutoboxingEg {
@@ -26,16 +26,16 @@ public class C_AutoboxingEg {
         // Integer IObj1 = new Integer(iA);
 
         // Converting int into Integer explicitly
-        Integer IObj2 = Integer.valueOf(iA);
+        Integer iObj2 = Integer.valueOf(iA);
 
         // Implicit Conversion
         // Autoboxing
-        Integer IObj3 = iA;
-
+        Integer iObj3 = iA;
+        System.out.println(iObj2 == iObj3);
         // Displaying the class names of the objects
         // System.out.println(IObj1.getClass().getName());
-        System.out.println(IObj2.getClass().getSimpleName());
-        System.out.println(IObj3.getClass().getSimpleName());
+        System.out.println(iObj2.getClass());
+        System.out.println(iObj3.getClass().getSimpleName());
 
         // Explicit Conversion of Primitive to Wrapper Class
         Double bObj1 = Double.valueOf(dB);
@@ -44,7 +44,7 @@ public class C_AutoboxingEg {
         Double bObj2 = dB;
 
         // System.out.println(IObj1);
-        System.out.println(IObj2);
-        System.out.println(IObj3);
+        System.out.println(iObj2);
+        System.out.println(iObj3);
     } // Refer PrimitiveToWrapper.java also
 }

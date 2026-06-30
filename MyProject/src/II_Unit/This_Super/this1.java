@@ -18,9 +18,9 @@ package II_Unit.This_Super;
 class Illustration1 {
 
     // declaring an instance variable
-    int instanceVar = 5;
+    int instanceVar;
     // declaring an static variable
-    static int staticVar = 10;
+    static int staticVar;
 
     void App() {
         // Method-specific variables

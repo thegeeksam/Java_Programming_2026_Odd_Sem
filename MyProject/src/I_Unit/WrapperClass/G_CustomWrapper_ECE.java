@@ -30,6 +30,7 @@ package I_Unit.WrapperClass;
 class Temperature {
     private int iTemperature;
 
+    // constructor to initialize the temperature value
     public Temperature(int iTemperature) {
         this.iTemperature = iTemperature;
     }

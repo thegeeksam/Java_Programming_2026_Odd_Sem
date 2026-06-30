@@ -22,14 +22,15 @@ package II_Unit.This_Super;
 
 class Code {
     int value = 10;
-    Code(){
+
+    Code() {
     }
 
     Code(int value) {
         // value = value; // Variable Shadowing
         // this.value refers to instance variable
         // value refers to parameter
-        this.value = value;          
+        this.value = value;
     }
 
     void print() {

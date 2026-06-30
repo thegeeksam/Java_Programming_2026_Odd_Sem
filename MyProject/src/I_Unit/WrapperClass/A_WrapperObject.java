@@ -11,14 +11,14 @@
  * @version 2.0
  */
 
-package WrapperClass;
+package I_Unit.WrapperClass;
 
 public class A_WrapperObject {
     public static void main(String xyz[]) {
         Integer iObjNum1 = new Integer(77); // int
         Integer iObjNum2 = 77;
         Integer iObjNum3 = 77;
-        Integer iObjNum4 = new Integer(77);
+        Integer iObjNum4 = Integer.valueOf(77);
         String sObjStr = "Hello"; // String
         Double dObjNum = Double.valueOf(77.0); // double argument
         Float fObjNum = Float.valueOf(77.0f); // float argument
@@ -28,6 +28,7 @@ public class A_WrapperObject {
         System.out.println(iObjNum1 == iObjNum4);
         System.out.println(iObjNum1 == iObjNum2);
         System.out.println(iObjNum2 == iObjNum3);
+        System.out.println(iObjNum2 == iObjNum4);
         System.out.println(System.identityHashCode(iObjNum1) +
                 " : " + System.identityHashCode(iObjNum4));
         System.out.println(System.identityHashCode(iObjNum2) +

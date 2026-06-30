@@ -10,15 +10,17 @@
  * @package II_Unit.This_Super
  * @author Dr. S. Sampath Kumar
  * @since 03-08-2025
+ * @updated 28.06.2026
  * @version 1.0
  */
 
 package II_Unit.This_Super;
+
 class Illustration3 {
 
     // simple constructor
     Illustration3() {
-        System.out.println("Hello CSE B!");
+        System.out.println("Hello CSE A!");
         // invoking parameterized constructor
         this(10);
     }
@@ -30,6 +32,12 @@ class Illustration3 {
         // file.write("Number is : " + x);
         // file.close();
         System.out.println("Number is : " + x);
+        this(20, 30);
+    }
+
+    Illustration3(int x, int y) {
+        System.out.println("Current class parameterized constructor2 invoked.");
+        System.out.println("Numbers are : " + x + " and " + y);
     }
 }
 

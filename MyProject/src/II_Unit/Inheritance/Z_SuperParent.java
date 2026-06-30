@@ -6,8 +6,10 @@
  * * an instance of the `Sub` class is created.
  * *
  * * This demonstrates the concept of Superclass and Subclass constructors in Java.
- * * The `Sub` class extends the `Super` class, and when an object of `Sub` is created, the constructor of `Super` is invoked first.
- * * This is because the subclass constructor implicitly calls the superclass constructor using `super()`.
+ * * The `Sub` class extends the `Super` class, and when an object of `Sub` is created,
+ * * the constructor of `Super` is invoked first.
+ * * This is because the subclass constructor implicitly calls the
+ * * superclass constructor using `super()`.
  * @package II_Unit.Inheritance
  * @author Dr. S. Sampath Kumar
  * @since 03-08-2025
@@ -30,9 +32,10 @@ class Child extends Parent {
 
 public class Z_SuperParent {
     public static void main(String[] args) {
-    Child child = new Child();
-    // When an object of Child is created, the constructor of Parent is called first.
-    // This is because the subclass constructor implicitly calls the 
-    // superclass constructor using super().
+        Child child = new Child();
+        // When an object of Child is created, the constructor of Parent is called
+        // first.
+        // This is because the subclass constructor implicitly calls the
+        // superclass constructor using super().
     }
 }

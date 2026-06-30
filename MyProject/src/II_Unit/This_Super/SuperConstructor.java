@@ -20,24 +20,24 @@ package II_Unit.This_Super;
 class Parent3 {
   // parent class constructor
   Parent3() {
-    System.out.println("Hi I am Parent class constructor.");
+    System.out.println("Hi, I am Parent class constructor.");
   }
 }
 
 // child class extending parent class
 class Child3 extends Parent3 {
   // child class constructor
-    Child3() {
-      // invoking parent class constructor
-      // constructor overriding
-      super();  // Explicitly call superclass constructor - Polymorphism
-      System.out.println("Hi I am Child class constructor.");
-      // super(); // this will work fine
-    }
+  Child3() {
+    // invoking parent class constructor
+    // constructor overriding
+    super(); // Explicitly call superclass constructor - Polymorphism
+    System.out.println("Hi, I am Child class constructor.");
+    // super(); // this will work fine
+  }
 
-    void print() {
-      System.out.println("Hello");
-    }
+  void print() {
+    System.out.println("Hello");
+  }
 }
 
 public class SuperConstructor {

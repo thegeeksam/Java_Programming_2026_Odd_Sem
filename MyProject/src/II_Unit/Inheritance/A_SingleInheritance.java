@@ -14,32 +14,32 @@
  * @version 1.0
  */
 package II_Unit.Inheritance;
+
 //Base class
-class Person
-{
-	String name="Kathiravan";
-	public void show()
-	{
+class Person {
+	String name = "Kathiravan";
+
+	public void show() {
 		System.out.println("Student inheriting properties from Person");
 	}
 }
-//child class
-class Student extends Person
-{
-  	// defining additional properties to child class
+
+// child class
+class Student extends Person {
+	// defining additional properties to child class
 	String course = "Java Programming";
-	public void show1()
-	{
+
+	public void show1() {
 		System.out.println("I am a Student who belongs to Person class");
 	}
 }
-public class A_SingleInheritance{
-	public static void main(String args[])
-	{
+
+public class A_SingleInheritance {
+	public static void main(String args[]) {
 		//
 		Student obj = new Student();
-		obj.show(); //calling Parent Class method
-		obj.show1(); //calling child class method
+		obj.show(); // calling Parent Class method
+		obj.show1(); // calling child class method
 		System.out.println("Name of student: " + obj.name);
 		System.out.println("Course opted by the student: " + obj.course);
 	}

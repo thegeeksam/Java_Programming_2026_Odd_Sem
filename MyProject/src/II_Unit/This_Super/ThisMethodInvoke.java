@@ -16,13 +16,13 @@ package II_Unit.This_Super;
 class Illustration2 {
 
     public Illustration2() {
+        this(10);
     }
 
-    
     public Illustration2(int x) {
-        System.out.println("Hello Jaisurya!");
+        System.out.println("Hello Deepika!");
     }
-    
+
     // current class method
     void app() {
         // this.Illustration2(10);
@@ -32,7 +32,8 @@ class Illustration2 {
     void name() {
         // invoking current class 'app' method.
         this.app();
-        System.out.println("Ravi.");
+        System.out.println("Dhanyasri");
+        // this(12);
     }
 }
 

@@ -33,6 +33,7 @@ class Citizen extends Country {
     // Instance initializer block
     {
         region = "Pollachi";
+        System.out.println("Instance initializer block executed");
     }
 
     // Constructor
@@ -40,6 +41,7 @@ class Citizen extends Country {
         // System.out.println("Default region assigned:" + region);
         System.out.println("Citizen object created.");
     }
+
     // region = "Coimbatore";
     // Overloaded constructor
     // This constructor will be called when a voter ID is provided
@@ -67,9 +69,9 @@ public class G_InitializerBlock {
 }
 
 /*
-In the above example, it seems that the instance initializer block 
-is invoked first, but NO. The instance initializer block is invoked
-at the time of object creation. The Java compiler copies the 
-instance initializer block in the constructor after the 
-first statement super(). So firstly, the constructor is invoked. 
-*/
+ * In the above example, it seems that the instance initializer block
+ * is invoked first, but NO. The instance initializer block is invoked
+ * at the time of object creation. The Java compiler copies the
+ * instance initializer block in the constructor after the
+ * first statement super(). So firstly, the constructor is invoked.
+ */
