@@ -19,17 +19,17 @@ package II_Unit.Static_Keyword;
 
 // Java code to demonstrate the use of static methods in a program
 class StaticExample {
-    int a = 10;
+    int iAbc = 10;
 
     static int square(int x) {
         // this will throw an error since 'a' is not static member
-        int a = 0;
-        a++;
+        int iAbc = 0;
+        iAbc++;
         return x * x;
     }
 
     void printValue() {
-        System.out.println("Value of instance variable a: " + a);
+        System.out.println("Value of instance variable a: " + iAbc);
     }
 }
 
@@ -42,8 +42,8 @@ public class C_StaticMethod {
 
         // Cannot access non-static members directly in static context
         // This will throw an error
-        System.out.println("Value of a: " + StaticExample.a);
-        StaticExample.printValue();
+        // System.out.println("Value of a: " + StaticExample.iAbc);
+        // StaticExample.printValue();
 
         // Creating an instance of StaticExample to call the non-static method
         StaticExample se = new StaticExample();

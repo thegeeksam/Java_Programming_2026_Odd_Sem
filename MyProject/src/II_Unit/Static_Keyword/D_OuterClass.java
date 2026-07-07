@@ -37,6 +37,7 @@ public class D_OuterClass {
             // System.err.println(iA); // This will throw an error since iA is non-static
             System.out.println(iB);
             System.out.println(sPgm);
+            // System.out.println(iA);
         }
     }
 

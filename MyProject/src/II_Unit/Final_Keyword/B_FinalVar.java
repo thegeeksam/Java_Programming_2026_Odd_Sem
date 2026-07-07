@@ -22,7 +22,7 @@ public class B_FinalVar {
 
         // Attempting to reassign the final variable
         // Uncommenting this line will cause an error
-        myNumber = 20;
+        // myNumber = 20;
 
         // Using the final variable in some calculations
         int result = myNumber * 5;

@@ -30,7 +30,7 @@ public class B_StaticBlock {
     // will run only once.
     // class‑level initialization
     static {// static block declaration
-        System.out.println("Invoked java static block!");
+        System.out.println("static block Invoked!");
         // initializing radius and area static variable
         radius = 4;
         area = radius * radius;
@@ -39,7 +39,7 @@ public class B_StaticBlock {
     public static void main(String[] args) {
         // System.out.println(radius);
         // System.out.println(++radius);
-        System.out.println("main() function invok");
+        System.out.println("main() function invoked!!");
         System.out.println("Area of square with radius " + radius + ": " + area);
     }
 }

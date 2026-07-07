@@ -19,8 +19,8 @@
 package II_Unit.Static_Keyword;
 
 class Counter {
-    static int iStaticVar = 0; // static variable shared by all Counter objects
-    int iAkshay = 0; // non-static variable, unique to each instance
+    static int iStaticVar; // static variable shared by all Counter objects
+    int iAkshay; // non-static variable, unique to each instance
 
     Counter() {
         iStaticVar++;

@@ -18,7 +18,7 @@ package II_Unit.Final_Keyword;
 class Parent {
     // declaring method as final
     public final void display() {
-        System.out.println("Hello II CSE B!");
+        System.out.println("Hello II CSE A!");
     }
 
     public void display(int num) {
