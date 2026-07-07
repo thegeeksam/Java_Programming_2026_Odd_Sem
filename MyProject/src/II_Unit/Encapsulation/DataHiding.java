@@ -15,18 +15,19 @@
  */
 
 package II_Unit.Encapsulation;
+
 class Employee {
     // private variables
     // Data Hiding
-    private String name = "Madhumitha";
+    private String name = "Harish";
     private int age = 18;
 }
 
 public class DataHiding {
 
     public static void main(String[] args) {
-    //object of class Employee
-    Employee emp = new Employee();
-    System.out.println(emp.name);
+        // object of class Employee
+        Employee emp = new Employee();
+        System.out.println(emp.name);
     }
 }

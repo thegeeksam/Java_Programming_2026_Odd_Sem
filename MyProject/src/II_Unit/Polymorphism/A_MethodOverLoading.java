@@ -34,6 +34,7 @@ class StaticMethodPoly {
 
 public class A_MethodOverLoading {
 	public static void main(String args[]) {
+		// new StaticMethodPoly();
 		StaticMethodPoly obj = new StaticMethodPoly();
 		obj.sum(10, 20); // Calls the first sum method
 		obj.sum(10, 20, 30); // Calls the second sum method

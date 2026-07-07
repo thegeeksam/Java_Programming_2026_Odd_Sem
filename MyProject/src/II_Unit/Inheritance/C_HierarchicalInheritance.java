@@ -15,6 +15,7 @@
  */
 package II_Unit.Inheritance;
 // Java program to implement hierarchical 
+
 // inheritance
 
 class Parent {

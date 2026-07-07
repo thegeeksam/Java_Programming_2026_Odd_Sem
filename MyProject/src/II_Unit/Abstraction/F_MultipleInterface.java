@@ -12,13 +12,16 @@
  */
 
 package II_Unit.Abstraction;
+
 interface FirstInterface {
   public void myMethod(); // abstract method
+
   int iA = 10; // Member
 }
 
 interface SecondInterface {
   public void myOtherMethod(); // interface method
+
   public void myMethod(); // interface method
 }
 
@@ -27,14 +30,15 @@ class DemoClass implements FirstInterface, SecondInterface {
   public void myMethod() {
     System.out.println("Some text..");
   }
+
   @Override
   public void myOtherMethod() {
-    //iA++;
+    // iA++;
     System.out.println("Some other text..." + iA);
   }
 }
 
-public class MultipleInterface {
+public class F_MultipleInterface {
   public static void main(String[] args) {
     DemoClass myObj = new DemoClass();
     myObj.myMethod();

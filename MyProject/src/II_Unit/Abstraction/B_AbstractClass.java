@@ -14,9 +14,10 @@
 package II_Unit.Abstraction;
 
 // Abstract class
-abstract class Animal {
+abstract class B_Animal {
     // Abstract method (does not have a body)
     public abstract void animalSound();
+
     public abstract void eat();
 
     // Concrete method
@@ -26,21 +27,22 @@ abstract class Animal {
 }
 
 // Subclass inherit from Animal
-class Lion extends Animal {
+class B_Lion extends B_Animal {
     @Override
     public void animalSound() {
         // The body of animalSound() is provided here
         System.out.println("The Lion Roars!");
     }
-    
+
     @Override
     public void eat() {
-        System.out.println("The Lion eats meat");
+        System.out.println("The Lion eats meat.");
     }
 }
-public class AbstractClass {
+
+public class B_AbstractClass {
     public static void main(String[] args) {
-        Animal myLion = new Lion(); // Create a LionCub object
+        B_Animal myLion = new B_Lion(); // Create a B_Lion object
         myLion.animalSound();
         myLion.eat();
         myLion.sleep("Lion");

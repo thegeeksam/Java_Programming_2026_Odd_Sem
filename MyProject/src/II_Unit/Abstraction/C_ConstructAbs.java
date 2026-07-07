@@ -3,12 +3,14 @@
  * *
  * * This Java snippet illustrates:
  * * - Declares an abstract class CSE with an abstract method student()
- * * - Provides a concrete method getDetails() that prints "Hello CSE!"
+ * * - Demonstrates the use of constructors in abstract classes and
+ * *   how to instantiate a subclass.
  * *
  * @package II_Unit.Abstraction;
  * @author Dr. S. Sampath Kumar
  * @since 19-08-2025
- * @version 1.0
+ * @updated 07-07-2026
+ * @version 1.1
  */
 
 package II_Unit.Abstraction;
@@ -27,14 +29,14 @@ abstract class CSE {
 	abstract void student();
 }
 
-class CseC extends CSE { 
+class CseC extends CSE {
 	@Override
 	void student() {
-		System.out.println("This is II CSE B!");
+		System.out.println("This is II CSE A!");
 	}
 }
 
-public class ConstructAbs {
+public class C_ConstructAbs {
 	public static void main(String args[]) {
 		CSE obj = new CseC();
 		obj.student();

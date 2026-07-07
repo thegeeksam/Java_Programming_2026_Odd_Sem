@@ -38,6 +38,7 @@ class BaseClass {
 class DerivedClass extends BaseClass {
 
 	public DerivedClass() {
+		// super();
 		// Constructor of Derived Class
 		System.out.println("Constructor of Derived Class");
 	}
@@ -58,7 +59,7 @@ public class C_OverRiding {
 		// BaseClass obj1 = new BaseClass();
 		// obj1.methodA();
 		// This is just a line breaker. So ignore it.
-		System.out.println("Hello CSE A");
+		System.out.println("Hello ECE C");
 		BaseClass obj2 = new DerivedClass();
 		obj2.methodA();
 	}

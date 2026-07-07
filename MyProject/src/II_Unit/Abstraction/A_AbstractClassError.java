@@ -21,10 +21,10 @@ abstract class Animal {
     }
 }
 
-public class AbstractClassError {
+public class A_AbstractClassError {
     public static void main(String cseC[]) {
         Animal myObj = new Animal();
-        // will generate an error because we cannot 
+        // will generate an error because we cannot
         // create an instance of an abstract class
     }
 }

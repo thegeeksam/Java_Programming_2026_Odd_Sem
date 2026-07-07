@@ -30,7 +30,7 @@ class ClassA {
 
 class ClassB extends ClassA {
     ClassB() {
-        super();
+        // super();
         System.out.println("Constructor of ClassB");
     }
 
@@ -41,7 +41,7 @@ class ClassB extends ClassA {
 
 class ClassC extends ClassB {
     ClassC() {
-        super();
+        // super();
         System.out.println("Constructor of ClassC");
     }
 
