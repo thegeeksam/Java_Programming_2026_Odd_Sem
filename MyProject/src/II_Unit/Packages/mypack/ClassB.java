@@ -10,11 +10,11 @@
  * @version 1.0
  */
 
-package II_Unit.Packages.MyPack;
+package II_Unit.Packages.mypack;
 //import II_Unit.Packages.MyPack.ClassA;
 
 class ClassB extends ClassA {
     public void displayB() {
-        System.out.println("II CSE - Section B");
+        System.out.println("Hello, II CSE - Section B");
     }
 }

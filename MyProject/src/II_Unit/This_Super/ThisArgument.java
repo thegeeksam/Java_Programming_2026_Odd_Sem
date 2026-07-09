@@ -30,7 +30,6 @@ class Illustration4 {
         print(this);
         // this refers to the current object of Illustration4 class
         // object is not passed here, object reference is passed
-
     }
 }
 

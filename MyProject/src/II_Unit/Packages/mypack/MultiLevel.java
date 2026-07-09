@@ -15,24 +15,25 @@
  * @version 1.0
  */
 
-package II_Unit.Packages;
+package II_Unit.Packages.mypack;
 // import II_Unit.Packages.MyPack.ClassD;
 
-public class MultiLevel{
-    public static void main(String args[]){
-         ClassD cse = new ClassD();
-         cse.displayA();
-         cse.displayB();
-         cse.displayC();
-         cse.displayD();
+public class MultiLevel {
+    public static void main(String args[]) {
+        ClassD cse = new ClassD();
+        cse.displayA();
+        cse.displayB();
+        cse.displayC();
+        cse.displayD();
     }
-    public void show(){
-        System.out.println("Welcome to Java Session!");
+
+    public void show() {
+        System.out.println("This is inside My Package!");
     }
 }
 
 /*
-javac MyPackageClass.java
-javac -d . MyPackageClass.java
-java mypack.MyPackageClass
-*/
+ * javac MyPackageClass.java
+ * javac -d . MyPackageClass.java
+ * java mypack.MyPackageClass
+ */

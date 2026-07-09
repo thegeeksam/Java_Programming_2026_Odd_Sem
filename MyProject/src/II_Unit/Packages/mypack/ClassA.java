@@ -10,10 +10,10 @@
  * @version 1.0
  */
 
-package II_Unit.Packages.MyPack;
+package II_Unit.Packages.mypack;
 
 class ClassA {
-    public void displayA(){
-        System.out.println("II CSE - Section A");
+    public void displayA() {
+        System.out.println("Hello, II CSE - Section A");
     }
 }
