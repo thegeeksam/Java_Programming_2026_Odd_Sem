@@ -34,17 +34,17 @@ class B_Lion extends B_Animal {
         System.out.println("The Lion Roars!");
     }
 
-    @Override
-    public void eat() {
-        System.out.println("The Lion eats meat.");
-    }
+    // @Override
+    // public void eat() {
+    // System.out.println("The Lion eats meat.");
+    // }
 }
 
 public class B_AbstractClass {
     public static void main(String[] args) {
         B_Animal myLion = new B_Lion(); // Create a B_Lion object
         myLion.animalSound();
-        myLion.eat();
+        // myLion.eat();
         myLion.sleep("Lion");
     }
 }

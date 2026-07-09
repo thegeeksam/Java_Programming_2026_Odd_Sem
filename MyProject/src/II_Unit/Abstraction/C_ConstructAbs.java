@@ -19,14 +19,14 @@ abstract class CSE {
 	int total;
 
 	CSE() {
-		System.out.println("Constructor is Invoked!\n");
+		System.out.println("Abstract (Parent) Class Constructor is Invoked!\n");
 	}
+
+	abstract void student();
 
 	void getDetails() {
 		System.out.println("Hello CSE!\n");
 	}
-
-	abstract void student();
 }
 
 class CseC extends CSE {

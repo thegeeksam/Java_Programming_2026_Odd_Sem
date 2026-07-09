@@ -19,6 +19,7 @@
  */
 
 package II_Unit.Abstraction;
+
 // Interface
 interface D_Animal {
   // abstract method (does not have a body)
