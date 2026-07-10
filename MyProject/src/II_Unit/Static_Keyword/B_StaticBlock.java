@@ -22,24 +22,33 @@
  */
 package II_Unit.Static_Keyword;
 
-public class B_StaticBlock {
+class StaticBlockExample {
     // static variable declaration
     static int area;
     static int radius;
+
     // run before main()
     // will run only once.
     // class‑level initialization
     static {// static block declaration
-        System.out.println("static block Invoked!");
+        System.out.println("static block invoked!");
         // initializing radius and area static variable
         radius = 4;
         area = radius * radius;
     }
 
+    StaticBlockExample() {
+        System.out.println("Constructor Invoked!");
+    }
+}
+
+public class B_StaticBlock {
     public static void main(String[] args) {
         // System.out.println(radius);
         // System.out.println(++radius);
-        System.out.println("main() function invoked!!");
-        System.out.println("Area of square with radius " + radius + ": " + area);
+        // System.out.println("main() function invoked!!");
+        StaticBlockExample sbe = new StaticBlockExample();
+        System.out.println("Area of square with radius " +
+                sbe.radius + ": " + StaticBlockExample.area);
     }
 }

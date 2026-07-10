@@ -15,12 +15,20 @@
 
 package II_Unit.Encapsulation;
 
-class Student1 {
+class Student2 {
     private final int iRegisterNumber;
 
-    Student1(int iRegisterNumber) {
+    Student2(int iRegisterNumber) {
         this.iRegisterNumber = iRegisterNumber;
     }
+
+    // public void setRegisterNumber(int iRegisterNumber) {
+    // // This method is intentionally left empty to demonstrate that
+    // // the register number cannot be modified after initialization.
+    // this.iRegisterNumber = iRegisterNumber; // This line will cause a
+    // compile-time error
+    // System.out.println("Cannot modify register number. It is read-only.");
+    // }
 
     // Getter only
     public int getRegisterNumber() {
@@ -30,7 +38,7 @@ class Student1 {
 
 public class D_ReadOnly {
     public static void main(String[] args) {
-        Student1 objStudent = new Student1(101);
+        Student2 objStudent = new Student2(101);
         // Reading is allowed
         System.out.println("Register Number: " + objStudent.getRegisterNumber());
         // No setter is available to modify it

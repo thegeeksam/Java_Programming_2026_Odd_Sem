@@ -15,7 +15,7 @@
 
 package II_Unit.Encapsulation;
 
-class BankAccount {
+class BankAccount1 {
     private double dBalance = 10000.00;
 
     // Controlled methods
@@ -38,9 +38,8 @@ class BankAccount {
 
 public class B_RestrictingAccess {
     public static void main(String[] args) {
-        BankAccount objAccount = new BankAccount();
+        BankAccount1 objAccount = new BankAccount1();
         objAccount.deposit(5000.00);
-        objAccount.withdraw(2000.00);
         System.out.println("Current Balance: " + objAccount.getBalance());
 
         // Direct modification is NOT possible because dBalance is 'private'

@@ -22,7 +22,7 @@ class StaticExample {
     int iAbc = 10;
 
     static int square(int x) {
-        // this will throw an error since 'a' is not static member
+        // // this will throw an error since 'a' is not static member
         int iAbc = 0;
         iAbc++;
         return x * x;
@@ -37,8 +37,8 @@ public class C_StaticMethod {
     public static void main(String[] args) {
         // Calling the static method square from StaticExample class
         // using the class name directly
-        int result = StaticExample.square(5);
-        System.out.println("Square of 5 is: " + result);
+        int iResult = StaticExample.square(5);
+        System.out.println("Square of 5 is: " + iResult);
 
         // Cannot access non-static members directly in static context
         // This will throw an error
