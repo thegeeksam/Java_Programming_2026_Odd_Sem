@@ -1,6 +1,6 @@
 package III_Unit.JavaString;
 
-public class StringMethods {
+public class E_StringMethods {
     public static void main(String[] args) {
 
         String str1 = "II CSE B!";

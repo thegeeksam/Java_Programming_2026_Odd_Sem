@@ -16,13 +16,6 @@
 
 package III_Unit.JavaString;
 
-public class JavaChar {
-    public static void main(String args[]) {
-        // Character
-        char[] ch = { 'I', 'I', ' ', 'C', 'S', 'E', ' ', 'B' };
-        System.out.println(ch);
-        // String
-        String s = "Hello! II CSE B";
-        System.out.println(s);
-    }
+public class Z_Chumma {
+
 }

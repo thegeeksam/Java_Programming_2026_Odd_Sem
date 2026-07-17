@@ -8,7 +8,7 @@
  * * but the Player can exist independently of the Team.
  * *
  * * Relationship:
- * * +------------+       has-a         +------------+
+ * * +------------+       has-a          +------------+
  * * |   Team     | -------------------> |  Player    |
  * * +------------+                      +------------+
  * * |  sTeamName |                      |  sName     |

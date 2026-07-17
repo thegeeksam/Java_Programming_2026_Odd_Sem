@@ -25,24 +25,28 @@ abstract class CSE {
 	abstract void student();
 
 	void getDetails() {
-		System.out.println("Hello CSE!\n");
+		System.out.println("Hello ECE!\n");
 	}
 }
 
-class CseC extends CSE {
+class EceC extends CSE {
+	EceC() {
+		// super();
+		System.out.println("Concrete (Child) Class Constructor is Invoked!\n");
+	}
+
 	@Override
 	void student() {
-		System.out.println("This is II CSE A!");
+		System.out.println("This is II ECE C!");
 	}
 }
 
 public class C_ConstructAbs {
 	public static void main(String args[]) {
-		CSE obj = new CseC();
+		CSE obj = new EceC();
 		obj.student();
 		obj.getDetails();
-		obj.total = 64;
-		System.out.println(obj.total);
+		obj.total = 66;
+		System.out.println("Total Students in Class is: " + obj.total);
 	}
-
 }
