@@ -24,45 +24,48 @@ public class D_StringImmutable {
         System.out.println(objStr); // Output: Hello
         // Modified string objStr
         System.out.println(System.identityHashCode(objStr));
-        objStr = objStr + " World!";
+        objStr += " World!";
+        System.out.println(objStr); // Output: Hello World!
         System.out.println(System.identityHashCode(objStr));
 
         // Original string str is not modified
         String str1 = "Hello";
         // System.out.println(str1.hashCode());
+        System.out.println(System.identityHashCode(str1));
         String str2 = new String("Hello");
-        String str3 = "Hello";
+        System.out.println(System.identityHashCode(str2));
+        // String str3 = "Hello";
 
         // System.out.println(str2.hashCode());
 
         // str2 = str2 + " World";
         // System.out.println(str2.hashCode());
-        System.out.println(str1 + " " + str2);
-        // In the case of objects, '==' compares the memory locations.
-        // Here is the proof
-        if (str1 == str2) {
-            System.out.println("str1 and str2 are equal.");
-        } else {
-            System.out.println("str1 and str2 are not equal.");
-        }
+        // System.out.println(str1 + " " + str2);
+        // // In the case of objects, '==' compares the memory locations.
+        // // Here is the proof
+        // if (str1 == str2) {
+        // System.out.println("str1 and str2 are equal.");
+        // } else {
+        // System.out.println("str1 and str2 are not equal.");
+        // }
 
-        if (str1.equals(str2)) {
-            System.out.println("str1 and str2 are equal.");
-        } else {
-            System.out.println("str1 and str2 are not equal.");
-        }
+        // if (str1.equals(str2)) {
+        // System.out.println("str1 and str2 are equal.");
+        // } else {
+        // System.out.println("str1 and str2 are not equal.");
+        // }
 
-        if (str1 == str3) {
-            System.out.println("str1 and str3 are equal.");
-        } else {
-            System.out.println("str1 and str3 are not equal.");
-        }
+        // if (str1 == str3) {
+        // System.out.println("str1 and str3 are equal.");
+        // } else {
+        // System.out.println("str1 and str3 are not equal.");
+        // }
 
-        if (str1.equals(str3)) {
-            System.out.println("str1 and str3 are equal.");
-        } else {
-            System.out.println("str1 and str3 are not equal.");
-        }
+        // if (str1.equals(str3)) {
+        // System.out.println("str1 and str3 are equal.");
+        // } else {
+        // System.out.println("str1 and str3 are not equal.");
+        // }
 
     }
 }

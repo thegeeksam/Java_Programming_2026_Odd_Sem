@@ -21,17 +21,20 @@ public class C_NewString {
         // String using new keyword
         String objStr3 = new String("Hello, II CSE A");
         String objStr4 = new String("Hello, II CSE A");
-
         // objStr3 and objStr4 are two different objects
         // in the heap memory, even though they have the same value.
 
         System.out.println("Reference comparison (==): " + (objStr3 == objStr4)); // false
-        System.out.println("Value comparison (.equals()): " + objStr3.equals(objStr4)); // true
+        System.out.println("Value comparison (.equals()): " +
+                objStr3.equals(objStr4)); // true
 
-        System.out.println("Hash code of objStr3: " + System.identityHashCode(objStr3));
-        System.out.println("Hash code of objStr4: " + System.identityHashCode(objStr4));
-
-        System.out.println("objStr3 == objStr4: " + (objStr3 == objStr4)); // false. why?
+        System.out.println("Hash code of objStr3: " +
+        System.identityHashCode(objStr3));
+        // System.out.println("Hash code of objStr4: " +
+        // System.identityHashCode(objStr4));
+        System.out.println(objStr3.hashCode() + " \n " + objStr4.hashCode());
+        // System.out.println("objStr3 == objStr4: " + (objStr3 == objStr4)); // false.
+        // why?
     }
 }
 

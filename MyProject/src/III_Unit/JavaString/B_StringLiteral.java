@@ -32,9 +32,11 @@ public class B_StringLiteral {
 
         // reference comparison,
         // both are pointing to the same object in the string pool
-        System.out.println("Reference comparison (==): " + (objStr1 == objStr2)); // true
+        System.out.println("Reference comparison (==): " + (objStr1 == objStr2)); //
+        // true
 
         // value comparison, both have the same value
-        System.out.println("Value comparison (.equals()): " + objStr1.equals(objStr2)); // true
+        System.out.println("Value comparison (.equals()): " +
+                objStr1.equals(objStr2)); // true
     }
 }
