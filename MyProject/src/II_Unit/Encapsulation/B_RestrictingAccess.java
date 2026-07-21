@@ -27,7 +27,7 @@ class BankAccount1 {
 
     public void withdraw(double dAmount) {
         if (dAmount > 0 && dAmount <= dBalance) {
-            dBalance -= dAmount;
+            dBalance -= dAmount; // dBalance = dBalance - dAmount;
         }
     }
 

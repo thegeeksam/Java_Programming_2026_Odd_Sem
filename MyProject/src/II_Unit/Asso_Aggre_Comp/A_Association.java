@@ -55,9 +55,7 @@ class Doctor {
 }
 
 public class A_Association {
-
     public static void main(String[] args) {
-
         // Both objects are created independently
         Doctor objDoctor = new Doctor("Arun");
 

@@ -25,7 +25,6 @@
 package II_Unit.Asso_Aggre_Comp;
 
 class Player {
-
     String sName;
 
     Player(String sName) {
@@ -39,8 +38,8 @@ class Team {
     // Stores Player as its state
     Player objPlayer;
 
-    // Faculty reference is passed to the Department,
-    // but the Department does not own the Faculty.
+    // Player reference is passed to the Team,
+    // but the Team does not own the Player.
     Team(String sTeamName, Player objPlayer) {
         this.sTeamName = sTeamName;
         this.objPlayer = objPlayer;

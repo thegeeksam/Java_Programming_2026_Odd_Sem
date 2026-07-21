@@ -1,8 +1,21 @@
+/**
+ * * This file is part of the Java Programming Lecture project.
+ * *
+ * * This Java snippet illustrates:
+ * * - the use of StringBuilder methods for mutable strings
+ * * - 
+ * *
+ * @package I_Unit
+ * @author Dr. S. Sampath Kumar
+ * @since 17-07-2026
+ * @version 2.0
+ */
+
 package III_Unit.StrBufferBuilder;
 
-public class StrBufferMethods {
+public class C_StrBufferMethods {
     public static void main(String[] args) {
-        
+
         StringBuffer sb = new StringBuffer("Hello");
         // Important methods of StringBuffer class
         // 5 is the length of Hello. So, capacity is 16 + 5 = 21.
@@ -34,18 +47,18 @@ public class StrBufferMethods {
         // Set the character at index 1 to i
         sb.setCharAt(1, 'i');
         // System.out.println(sb);
-        // System.out.println(sb + " " + sb.length() + " " + sb.capacity());
-        // sb.append("01234567890");
-        // System.out.println(sb + " " + sb.capacity());
+        System.out.println(sb + " " + sb.length() + " " + sb.capacity());
+        sb.append("01234567890");
+        System.out.println(sb + " " + sb.capacity());
 
         // Set the length of the string to 3
         sb.setLength(3);
         System.out.println(sb + " " + sb.capacity());
 
-        // sb.ensureCapacity(100);
-        // System.out.println(sb + " " + sb.capacity());''
-        // String s = sb.toString();
-        // s += " 0123456789";
-        // System.out.println(s);
+        sb.ensureCapacity(100);
+        System.out.println(sb + " " + sb.capacity());
+        String s = sb.toString();
+        s += " 0123456789";
+        System.out.println(s);
     }
 }
