@@ -14,6 +14,11 @@ package II_Unit.Packages.mypack;
 //import II_Unit.Packages.MyPack.ClassC;
 
 public class ClassD extends ClassC {
+    public ClassD() {
+        // super();
+        System.out.println("Hello from Class D Constructor");
+    }
+
     public void displayD() {
         System.out.println("Hello, II CSE - Section D");
     }

@@ -3,7 +3,7 @@ package III_Unit.JavaString;
 public class E_StringMethods {
     public static void main(String[] args) {
 
-        String str1 = "II CSE B!";
+        String str1 = "II ECE C!";
         // Length of the string
         int classLength = str1.length();
         System.out.println(classLength);
@@ -13,18 +13,18 @@ public class E_StringMethods {
         System.out.println(ch);
 
         // Concatenate 2 string: Method 1
-        String str2 = "II CSE";
+        String str2 = "II ECE";
         str2 = str2.concat(" C!");
         System.out.println(str2);
 
         // Concatenate 2 string: Method 2
-        String str1 = "II CSE";
-        String str2 = " \"C\"!"; // Escape Character
+        String str3 = "II CSE";
+        String str4 = " \"C\"!"; // Escape Character
         String concatenated = str1 + str2;
         System.out.println(concatenated);
 
         // Escape Character
-        String str = "II CSE \"C\"!"; // Escape Character
+        String str = "II ECE \"C\"!"; // Escape Character
         System.out.println(str);
 
         // Substring
@@ -45,14 +45,14 @@ public class E_StringMethods {
         // System.out.println(str3.equals(str6));
         // System.out.println(str3.equals(str7));
 
-        // // A string contains a specified substring
-        // String str = "I like Java Programming";
-        // // 1st print statement
-        // System.out.println(str.contains("Java"));
-        // // 3rd print statement
-        // System.out.println(str.contains("Python"));
-        // // 4th print statement
-        // System.out.println(str.contains("programming"));
+        // A string contains a specified substring
+        String str10 = "I like Java Programming";
+        // 1st print statement
+        System.out.println(str.contains("Java"));
+        // 3rd print statement
+        System.out.println(str10.contains("Python"));
+        // 4th print statement
+        System.out.println(str10.contains("programming"));
 
         // String join()
         // String str = String.join(" ", "Happy", "Morning", "II", "CSE", "C!");
@@ -68,14 +68,14 @@ public class E_StringMethods {
         // System.out.println(str3);
 
         // String toUpperCase()
-        // String str = "ii cse c";
-        // String strUpper = str.toUpperCase();
-        // System.out.println(strUpper);
+        str = "ii cse c";
+        String strUpper = str.toUpperCase();
+        System.out.println(strUpper);
 
         // String toLowerCase()
-        // String str = "II cSE C";
-        // String strLower = str.toLowerCase();
-        // System.out.println(strLower);
+        str = "II cSE C";
+        String strLower = str.toLowerCase();
+        System.out.println(strLower);
 
         // trim() method
         // String str = " Coding is ";

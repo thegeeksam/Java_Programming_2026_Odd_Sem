@@ -16,6 +16,25 @@
 
 package III_Unit.JavaString;
 
+class StaticString {
+    static String objStr = "Hello";
+
+    static void getString() {
+        objStr = objStr.concat(" World!");
+        System.out.println(objStr);
+    }
+
+}
+
 public class Z_Chumma {
+    public static void main(String[] args) {
+        StaticString str = new StaticString(); // Prints the static string
+        System.out.println(str.objStr);
+        System.out.println(System.identityHashCode(str.objStr));
+        str.getString();
+        // Accessing static variable directly
+        System.out.println(System.identityHashCode(str.objStr));
+
+    }
 
 }

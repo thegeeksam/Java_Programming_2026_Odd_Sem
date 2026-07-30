@@ -13,6 +13,10 @@
 package II_Unit.Packages.mypack;
 
 class ClassA {
+    public ClassA() {
+        System.out.println("Hello from Class A Constructor");
+    }
+
     public void displayA() {
         System.out.println("Hello, II CSE - Section A");
     }

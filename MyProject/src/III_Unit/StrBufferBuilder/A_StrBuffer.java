@@ -17,39 +17,50 @@ public class A_StrBuffer {
         // StringBuffer is mutable
         // Creating a StringBuffer with no initial content.
         // Capacity is 16 by default.
+        // String s1 = "Hello!";
+        // System.out.println(s1.length());
         StringBuffer sSB1 = new StringBuffer();
-        System.out.println(sSB1.capacity());
-        System.out.println(sSB1.length());
+        // System.out.println(sSB1.capacity());
+        // System.out.println(sSB1.length());
         // System.out.println(sSB1.capacity()); // Capacity is 16 by default
-        sSB1.append("SECE");
-        System.out.println(sSB1.capacity());
-        System.out.println(sSB1.length());
-        // Creating a StringBuffer with initial content.
-        // Capacity is 16 + 4 = 20, where 4 is the length of "SECE".
+        // sSB1.append("SECE");
+        // System.out.println(sSB1.capacity());
+        // System.out.println(sSB1.length());
+        // sSB1.append("Hello World!");
+        // System.out.println(sSB1.capacity());
+        // System.out.println(sSB1.length());
+        // sSB1.append("!");
+        // System.out.println(sSB1.capacity());
+        // System.out.println(sSB1.length());
+        // sSB1.append("How are You? I am Fine. Thank You!");
+        // System.out.println(sSB1.capacity());
+        // System.out.println(sSB1.length());
+        // // Creating a StringBuffer with initial content.
+        // // Capacity is 16 + 4 = 20, where 4 is the length of "SECE".
         StringBuffer sSB2 = new StringBuffer("SECE");
         System.out.println(sSB2.capacity());
-        System.out.println(sSB1 == sSB2); // false, different references
-        System.out.println("Capacity of sSB1: " + sSB1.capacity());
-        System.out.println("Length of sSB1: " + sSB1.length()); // Length is 4
-        System.out.println("Capacity of sSB2: " + sSB2.capacity());
-        System.out.println("Length of sSB2: " + sSB2.length());
-        // Error: Can't convert StringBuffer to String
-        // sSB1 = "Hi";
-        // sSB1 = sSB1 + "Hello";
+        // System.out.println(sSB1 == sSB2); // false, different references
+        // System.out.println("Capacity of sSB1: " + sSB1.capacity());
+        // System.out.println("Length of sSB1: " + sSB1.length()); // Length is 4
+        // System.out.println("Capacity of sSB2: " + sSB2.capacity());
+        // System.out.println("Length of sSB2: " + sSB2.length());
+        // // Error: Can't convert StringBuffer to String
+        // // sSB1 = "Hi";
+        // // sSB1 = sSB1 + "Hello";
 
-        // String s1 = sSB1;
-        String s1 = sSB1.toString(); // Convert StringBuffer to String
-        // Append some content to StringBuffer
-        System.out.println(sSB1.append("!\nHello, II CSE B!"));
-        System.out.println(sSB1.length());
-        System.out.println(sSB1.capacity());
+        // // String s1 = sSB1;
+        // String s1 = sSB1.toString(); // Convert StringBuffer to String
+        // // Append some content to StringBuffer
+        // System.out.println(sSB1.append("!\nHello, II CSE B!"));
+        // System.out.println(sSB1.length());
+        // System.out.println(sSB1.capacity());
 
-        // If the capacity of StringBuffer gets full after adding
-        // an extra String, the new capacity of StringBuffer will be
-        // (previousCapacity + 1) * 2
-        System.out.println(sSB2.append("!\nHello, II CSE B!"));
-        System.out.println(sSB2.length());
-        System.out.println(sSB2.capacity());
+        // // If the capacity of StringBuffer gets full after adding
+        // // an extra String, the new capacity of StringBuffer will be
+        // // (previousCapacity + 1) * 2
+        // System.out.println(sSB2.append("!\nHello, II CSE B!"));
+        // System.out.println(sSB2.length());
+        // System.out.println(sSB2.capacity());
 
     }
 }
