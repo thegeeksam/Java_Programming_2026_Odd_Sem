@@ -17,7 +17,7 @@ package III_Unit.Collection_Generic;
 
 public class GenericChumma {
     // Generic method
-    // Declares a generic type parameter T. 
+    // Declares a generic type parameter T.
     // This allows the method to accept any data type
     // (Integer, String, Double, etc.).
     static <T> void genericDisplay(T element) {
@@ -32,7 +32,7 @@ public class GenericChumma {
         genericDisplay(64);
 
         // Calling generic method with String argument
-        genericDisplay("Hello CSE!");
+        genericDisplay("I Love Java Programming!");
 
         // Calling generic method with double argument
         genericDisplay(2.45);

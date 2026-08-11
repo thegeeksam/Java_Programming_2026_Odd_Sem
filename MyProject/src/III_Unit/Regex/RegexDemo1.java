@@ -90,7 +90,6 @@ public class RegexDemo1 {
 
         // 14. Check Register Number
         String sRegNo = "23CS001";
-
         System.out.println(Pattern.matches("\\d{2}[A-Z]{2}\\d{3}", sRegNo));
 
         // 15. Check Vehicle Number
@@ -98,6 +97,7 @@ public class RegexDemo1 {
         System.out.println(Pattern.matches("[A-Z]{2}\\d{2}[A-Z]{2}\\d{4}", sVehicleNo));
 
         // 16. Check if a String contains only vowels
-
+        System.out.println(Pattern.matches("[aeiouAEIOU]+", "aeiou"));
+        System.out.println(Pattern.matches("[aeiouAEIOU]+", "aeiou123"));
     }
 }

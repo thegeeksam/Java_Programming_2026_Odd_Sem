@@ -25,7 +25,6 @@
 
 package III_Unit.Collection_Generic.ListInterface;
 
-import java.net.SocketImpl;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -34,40 +33,44 @@ import java.util.Vector;
 
 public class A_ListInterface {
     public static void main(String[] args) {
-        // Creating the list of Integer references
-        List<Integer> list1 = new ArrayList<Integer>();
+        // Creating the list of Integer references using ArrayList
+        // reference type is List, but the object is ArrayList
+        List<Integer> objList = new ArrayList<>(); // Upcasting
         int a = 10;
-        list1.add(1);
-        list1.add(2);
-        list1.add(1,3);
-        list1.add(a); // Autoboxing
-        System.out.println("ArrayList: " + list1);
+        objList.add(1);
+        objList.add(2);
+        objList.add(1, 3);
+        objList.add(a); // Autoboxing
+        System.out.println("ArrayList: " + objList);
 
-        // Creating the list of Integer reference using LinkedList
-        List<Integer> list2 = new LinkedList<Integer>();
-        list2.add(4);
-        list2.add(5);
-        list2.add(1,6);
-        System.out.println("LinkedList: " + list2);
-        
+        // Creating the list of Integer reference using LinkedList class
+        // reference type is List, but the object is LinkedList
+        objList = new LinkedList<>(); // Upcasting
+        objList.add(4);
+        objList.add(5);
+        objList.add(1, 6);
+        System.out.println("LinkedList: " + objList);
+
         // Creating the list of Integer reference using the vector class
-        List<Integer> list3 = new Vector<Integer>();
-        list3.add(7);
-        list3.add(8);
-        list3.add(1,9);
-        System.out.println("Vector: " + list3);
+        // reference type is List, but the object is Vector
+        objList = new Vector<>(); // Upcasting
+        objList.add(7);
+        objList.add(8);
+        objList.add(1, 9);
+        System.out.println("Vector: " + objList);
 
         // Creating the list of Integer references using the stack
-        List<Integer> list4 = new Stack<Integer>();
-        list4.add(10);
-        list4.add(11);
-        // Stack will behave like a list since it 
-        // implements the List interface
-        // Stack is a subclass of Vector, which in turn implements List
-        // Vector (and therefore Stack) supports indexed insertion via add(index, element
-
-        list4.add(1,12);
-        System.out.println("Stack: " + list4);
+        // reference type is List, but the object is Stack
+        objList = new Stack<Integer>(); // Upcasting
+        objList.add(10);
+        objList.add(11);
+        // Stack will behave like a list since it inherits from Vector,
+        // which implements List. Stack is a subclass of Vector,
+        // which in turn implements List Vector (and therefore Stack)
+        // supports indexed insertion via add(index, element)
+        System.out.println("Stack: " + objList);
+        objList.add(1, 12);
+        System.out.println("Updated Stack: " + objList);
 
         Stack<Integer> stack = new Stack<>();
 
@@ -75,17 +78,18 @@ public class A_ListInterface {
         stack.push(10);
         stack.push(20);
         stack.push(30);
+        System.out.println("Stack: " + stack);
         // stack.push(1,40);
-        stack.add(1,40);
-
+        stack.add(1, 40);
         // Peek at the top element without removing
-        System.out.println(stack);
+        System.out.println("Updated Stack: " + stack);
         System.out.println("Top element: " + stack.peek()); // 30
 
         // Pop elements from the stack (removes from the top)
-        // System.out.println("Popped: " + stack.pop()); // 30
-        // System.out.println("Popped: " + stack.pop()); // 20
-        // System.out.println("Popped: " + stack.pop()); // 10
-
+        System.out.println("Popped: " + stack.pop()); // 30
+        System.out.println("Popped: " + stack.pop()); // 20
+        System.out.println("Popped: " + stack.pop()); // 40
+        System.out.println("Popped: " + stack.pop()); // 10
+        // System.out.println("Popped: " + stack.pop()); // ???
     }
 }
